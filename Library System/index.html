@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   <title>Library Management System</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+             <div class="topnav">
+                <a class="active" href="#">Library System</a>
+                <div class="topnav-right">
+                <a href="#books">Books</a>
+                <a href="#register">Register</a>
+                <a href="#contact">Contact</a>
+                <a href="#logout">Logout</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section id="books" class="section">
+        <div>
+            <table class="centerbox">
+                <h2>Books :</h2>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table2">1</td>
+                        <td class="table1 table2"><a href="https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy"><span>The Hitchhiker's Guide to the Galaxy by Douglas Adams</span></a>
+                            <table class="top">
+                                <tr>
+                                    <td>Publication Date:1979</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:195</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:0-345-39188-X</td>
+                                </tr>
+                            </table>
+                        <td class="table2"> Douglas Adams</td>
+                        <td class="table2"> Comedy and Science fiction</td>
+                        <td class="table2"> Available </td>
+                    </tr>
+                    <tr>
+                        <td class="table2"> 2 </td>
+                        <td class="table1 table2"><a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird"><span>To Kill a Mockingbird by Harper Lee</span> </a>
+                            <table class="top">
+                                <tr>
+                                    <td>Publication Date:1960</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:336</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:978-0449001219</td>
+                                </tr>
+                            </table>
+                        <td class="table2"> Harper Lee</td>
+                        <td class="table2"> Classic, coming-of-age, drama </td>
+                        <td class="table2">Not Available </td>
+                    </tr>
+                    <td class="table2"> 3 </td>
+                    <td class="table1 table2"><a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"><span>The Lord of the Rings</span></a>
+                        <table class="top">
+                            <tr>
+                                <td>Publication Date:1954–1955</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:1,024 (extended edition)</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:0-618-33319-9</td>
+                            </tr>
+                        </table>
+                    <td class="table2"> J.R.R. Tolkien</td>
+                    <td class="table2"> Epic high fantasy </td>
+                    <td class="table2"> Available </td>
+                    <tr>
+                        <td class="table2"> 4 </td>
+                        <td class="table1 table2"><a href="https://en.wikipedia.org/wiki/Pride_and_Prejudice"><span>Pride and Prejudice</span></a>
+                            <table class="top">
+                                <tr>
+                                    <td>Publication Date:1813</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:223</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:978-0486284733</td>
+                                </tr>
+                            </table>
+                        <td class="table2"> Jane Austen</td>
+                        <td class="table2"> Classic, romance, comedy of manners </td>
+                        <td class="table2">Not Available </td>
+                    </tr>
+                    <tr>
+                        <td class="table2"> 5 </td>
+                        <td class="table1 table2"><a href="https://en.wikipedia.org/wiki/The_Great_Gatsby"><span>The Great Gatsby</span></a>
+                            <table class="top">
+                                <tr>
+                                    <td>Publication Date:1925</td>
+                                </tr>
+                                <tr>
+                                    <td>Page Count:181</td>
+                                </tr>
+                                <tr>
+                                    <td>ISBN:0-394-75522-4</td>
+                                </tr>
+                            </table>
+                        <td class="table2"> F. Scott Fitzgerald</td>
+                        <td class="table2">  Classic, drama, romance </td>
+                        <td class="table2"> Available </td>
+                    </tr>
+                    </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </section><br><br>
+
+    <section id="register" class="section">
+        <div class="container">
+            <h2>Register:</h2>
+            <p>Please fill this form to create an account</p>
+            <form action="/submit" method="post">
+                <div class="fgroup">
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                </div><br>
+                <div class="fgroup">
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                </div><br>
+                <div class="fgroup">
+                    <label for="dob">Date Of Birth:</label><br>
+                    <input type="date" name="dob" id="dob" required>
+                </div><br>
+                <div class="fgroup">
+                    <label for="age">Age:</label><br>
+                    <input type="number" name="age" id="age" min="5" max="100" placeholder="5 - 100" required>
+                </div><br>
+                <div class="fgroup">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                </div><br>
+                <div class="fgroup">
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div><br>
+                <div class="fgroup">
+                <label for="confpassword">Confirm Password:</label><br>
+                <input type="password" name="confpassword" id="confpassword" placeholder="Confirm Password" required>
+            </div><br>
+            <div class="fgroup">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</section><br><br>
+<section>
+    <div class="container" id="contact" ><h2>Contact : </h2>
+        <p>Email : www.librarysystem@gmailcom <br>
+        Phone No: 9348393402</p>
+        </div>
+</section>
+
+</body>
+</html>
